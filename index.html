@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random Photos</title>
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+  </head>
+  <script type="text/javascript">
+    function randomPhoto() {
+      $("img").hide();
+      var images = $(document).find("img");
+      var index = Math.floor(Math.random() * images.length);
+      $(images[index]).show();
+    }
+  </script>
+  <body>
+    <a href="javascript:randomPhoto()">Give me one!</a>
+    <img width="100px" height="100px" src="http://www.labs.hp.com/research/info_theory/AlbertWeb/fullsize/B)%20Corrupted%20by%20random%20noise,%20bit%20error%20rate%3D0.020.gif" alt="Einstein">
+    <img width="100px" height="100px" src="https://www.newton.ac.uk/files/covers/968361.jpg" alt="2" hidden>
+    <img width="100px" height="100px" src="https://phillipbrande.files.wordpress.com/2013/10/random-pic-14.jpg" alt="3" hidden>
+    <img width="100px" height="100px" src="http://www.moooi.com/sites/default/files/styles/large/public/product-images/random_detail.jpg?itok=ErJveZTY" alt="4" hidden>
+  </body>
+</html>
